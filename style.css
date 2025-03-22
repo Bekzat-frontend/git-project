@@ -3,32 +3,91 @@
   padding: 0;
   box-sizing: border-box;
 }
-h1 {
-  color: red;
-  font-size: 20px;
-  font-weight: 900;
-  background-color: rgb(127, 234, 255);
-  
-}
-.resources {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 20px;
-  width: 90%;
-  margin: 0 auto;
-  padding: 10px;
-}
-.card {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  box-shadow: 1px 0px 10px grey;
-  padding: 10px;
-  border-radius: 10px;
 
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+  text-align: center;
 }
+
+header {
+  background-color: #0073e6;
+  color: white;
+  padding: 20px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
+header p {
+  margin-top: 5px;
+  font-size: 1.2em;
+}
+
+.resources {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
 .card img {
-  width: 100%;
+  width: 100px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.card h2 {
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+
+.card p {
+  font-size: 1em;
+  color: #666;
+}
+
+.card a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 15px;
+  text-decoration: none;
+  background: #0073e6;
+  color: white;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.card a:hover {
+  background: #005bb5;
+}
+
+footer {
+  background: #4c4c4c;
   height: 250px;
-  object-fit: cover;
+  color: white;
+  padding: 20px;
+  margin-top: 20px;
 }
